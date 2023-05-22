@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    -webkit-touch-callout: none; /* Untuk iOS Safari */
+    -webkit-user-select: none; /* Untuk Safari */
+    -khtml-user-select: none; /* Untuk Konqueror HTML */
+    -moz-user-select: none; /* Untuk Firefox */
+    -ms-user-select: none; /* Untuk Internet Explorer/Edge */
+    user-select: none; /* Standar CSS */
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    background-color: black;
+    background: linear-gradient(to bottom right, rgb(0, 174, 255), white);
+    height: 600px;
+}
+
+/* body */
+.container_port {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 40px;
+}
+
+.container_port img {
+    border-radius: 50%;
+    margin: 20px;
+    height: 200px;
+}
+
+/* Navigasi */
+.container_nav {
+    display: flex;
+    justify-content: end;
+    padding-top: 20px;
+}
+
+.container a {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 80px;
+    text-align: center;
+}
+
+.container a[id=active] {
+    border-bottom: 3px solid white;
+}
+
+.container a:hover {
+    color: rgb(229, 229, 229);
+}
+
+/* Myself */
+.container_me {
+    width: 800px;
+}
+
+.container_me_name {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+    width: 280px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.container_me_desc {
+    font-size: 15px;
+    color: rgb(229, 229, 229);
+}
+
+/* Skill */
+.container_skill {
+    width: 100%;
+    justify-content: center;
+}
+
+.container_skill_1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container_skill_1 h1 {
+    border-bottom: 3px solid white;
+    font-size: 35px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container_skill_2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skill_html, .skill_css, .skill_js {
+    color: rgb(229, 229, 229);
+    cursor: default;
+}
+
+.skill_html:hover {
+    color: #ff9861;
+}
+
+.skill_css:hover {
+    color: #00a6ff;
+}
+
+.skill_js:hover {
+    color: #fbff00;
+}
+
+.container_skill_2 h1 {
+    margin-left: 85px;
+    margin-right: 85px;
+    font-size: 65px;
+}
+
+/* Search Engine */
+.container_search {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+}
+
+.container_search_1 {
+    border-radius: 50px;
+    background-color: white;
+    width: 30%;
+    justify-content: end;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.container_search_kaca {
+    height: 20px;
+    margin-left: 50px;
+}
+
+.container_search_2 {
+    margin-right: 10px;
+}
+
+#input_search {
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 380px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Login Box */
+#login_box {
+    display: none;
+    background: linear-gradient(to bottom right, rgb(65, 194, 254), white);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.login_title {
+    margin: 20px;
+    font-size: 50px;
+    border-bottom: 3px solid white;
+    height: 55px;
+    width: 200px;
+    text-align: center;
+}
+
+.login_user {
+    display: block;
+}
+
+.login_username {
+    font-size: 35px;
+    color: white;
+    margin-left: 25px;
+}
